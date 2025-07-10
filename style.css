@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: right;
+  padding: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "cpu ram"
+    "rom cmos"
+    "storage power";
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.component {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cpu {
+  grid-area: cpu;
+}
+.ram {
+  grid-area: ram;
+}
+.rom {
+  grid-area: rom;
+}
+.cmos {
+  grid-area: cmos;
+}
+.storage {
+  grid-area: storage;
+}
+.power {
+  grid-area: power;
+}
+
+.bios {
+  background: #001f4d;
+  color: #f0f0a0;
+  font-family: monospace;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+#closeModal {
+  float: right;
+  cursor: pointer;
+}
+header {
+  text-align: center;
+}
+#toggleBtn {
+  border: 5px solid rgb(45, 131, 211);
+  border-radius: 30px solid black;
+}
+.modal-content img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer {
+  background-color: lightgrey;
+  padding: 60px;
+}
+footer p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}

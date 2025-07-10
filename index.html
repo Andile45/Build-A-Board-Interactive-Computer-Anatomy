@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build-A-Board: Interactive Anatomy</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <button id="toggleBtn">Switch to BIOS</button>
+    </header>
+
+    <main>
+        <h1>Interactive Computer Anatomy</h1>
+
+        <div id="motherboardView" class="grid">
+            <div class="component cpu" data-name="CPU"
+                data-info="The Central Processibg Unit(CPU) is the brain of the computer." data-image="assets/cpu.jpg">
+                CPU</div>
+            <div class="component ram" data-name="RAM"
+                data-info="RAM(Random Access Memory) is short-term memory for active data."
+                data-image="assets/RAM.webp">RAM</div>
+            <div class="component rom" data-name="ROM" data-info="ROM stores permanent startup instructions."
+                data-image="assets/ROM.jpg">ROM</div>
+            <div class="component cmos" data-name="CMOS" data-info="CMOS holds BIOS settings & clock."
+                data-image="assets/CMOS.png">CMOS</div>
+            <div class="component storage" data-name="Storage Drive" data-info="Storage holds files & OS."
+                data-image="assets/ssd-hdd.jpg">Storage</div>
+            <div class="component power" data-name="Power Unit" data-info="Supplies power to all components."
+                data-image="assets/powerunit.jpeg">Power
+            </div>
+        </div>
+
+
+        <div id="biosView" class="bios" style="display:none;">
+            <h1>BIOS Setup Utility</h1>
+            <p>Boot Order: HDD > USB > CD</p>
+            <p>Security: [Enabled]</p>
+            <p>CMOS Clock: 2025-07-10 15:00</p>
+            <p>BIOS Version: 1.0.0</p>
+            <p>Press F10 to Save and Exit | Press Esc to Return</p>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="" style="max-width: 100%; margin: 10px; " />
+            <p id="modalInfo"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <br>
+
+    <footer>
+        <p>&copy; XLV Cooperations</p>
+        <br>
+        <div class="icons">
+            <img class="facebook" src="assets/facebook.png" alt="facebook" width=35px" height="40px" />
+            <img class="instagram" src="assets/instagram.png" alt="instagram" width=35px" height="40px" />
+            <img class="whatsApp" src="assets/WhatsApp.png" alt="WhatsApp" width=35px" height="40px"" />
+
+        </div>
+    </footer>
+</body>
+
+</html>
