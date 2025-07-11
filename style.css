@@ -206,6 +206,9 @@ ul li {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: large;
 }
+.name {
+  padding: 10px;
+}
 .nav {
   display: inline-flex;
 }
