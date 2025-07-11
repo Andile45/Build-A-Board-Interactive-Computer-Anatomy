@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  
 }
 
 header {
@@ -11,9 +10,8 @@ header {
   justify-content: space-between;
   background-color: rgb(234, 234, 234);
   margin-bottom: 20px;
-
 }
-header h2{
+header h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -62,9 +60,9 @@ button {
 }
 
 .bios {
-  background: lightblue;
-  color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: darkblue;
+  color: yellow;
+  font-family: "Courier New", Courier, monospace;
   padding: 20px;
   min-height: 300px;
   font-weight: bold;
@@ -126,12 +124,12 @@ body {
   padding: 0;
   margin: 0;
 }
-main{
+main {
   text-align: center;
 }
-.organisation{
-  padding:  15px;
+.organisation {
+  padding: 15px;
 }
-.logo{
+.logo {
   padding: 10px;
 }
